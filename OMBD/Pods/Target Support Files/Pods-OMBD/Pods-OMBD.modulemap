@@ -1,0 +1,6 @@
+framework module Pods_OMBD {
+  umbrella header "Pods-OMBD-umbrella.h"
+
+  export *
+  module * { export * }
+}
