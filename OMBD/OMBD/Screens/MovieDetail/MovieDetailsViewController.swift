@@ -39,7 +39,8 @@ class MovieDetailsViewController: UIViewController {
     
     func setUpUI() {
         if let movieData = movieData {
-            titleLabel.text = movieData.title ?? "" + " at \(movieData.year ?? "")"
+            print(movieData)
+            titleLabel.text = (movieData.title ?? "") + " at \(movieData.year ?? "")"
             subTitleLabel.text = (movieData.type ?? "") + " imdbId \(movieData.imdbID ?? "")"
             if let imageString = movieData.poster, let url = URL(string: imageString)  {
                 movieImageView.kf.setImage(with: url)
